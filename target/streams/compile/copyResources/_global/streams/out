@@ -1,0 +1,8 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/vinay/Projects/playsamples/play-samples/play-java-ebean-example/conf/logback.xml,/Users/vinay/Projects/playsamples/play-samples/play-java-ebean-example/target/scala-2.13/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/vinay/Projects/playsamples/play-samples/play-java-ebean-example/conf/messages,/Users/vinay/Projects/playsamples/play-samples/play-java-ebean-example/target/scala-2.13/classes/messages)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/vinay/Projects/playsamples/play-samples/play-java-ebean-example/conf/ebean.properties,/Users/vinay/Projects/playsamples/play-samples/play-java-ebean-example/target/scala-2.13/classes/ebean.properties)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/vinay/Projects/playsamples/play-samples/play-java-ebean-example/conf/application.conf,/Users/vinay/Projects/playsamples/play-samples/play-java-ebean-example/target/scala-2.13/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/vinay/Projects/playsamples/play-samples/play-java-ebean-example/conf/routes,/Users/vinay/Projects/playsamples/play-samples/play-java-ebean-example/target/scala-2.13/classes/routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/vinay/Projects/playsamples/play-samples/play-java-ebean-example/conf/evolutions/default/2.sql,/Users/vinay/Projects/playsamples/play-samples/play-java-ebean-example/target/scala-2.13/classes/evolutions/default/2.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/vinay/Projects/playsamples/play-samples/play-java-ebean-example/conf/evolutions/default/1.sql,/Users/vinay/Projects/playsamples/play-samples/play-java-ebean-example/target/scala-2.13/classes/evolutions/default/1.sql)[0m

@@ -1,0 +1,102 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Default path will just redirect to the computer list
+GET     /                           controllers.HomeController.index()
+GET     /driver                           controllers.DriverController.list()
+GET     /driver/:id                           controllers.DriverController.get(id:Long)
+POST    /driver                  controllers.DriverController.create(request: Request)
+PUT    /driver/update              controllers.DriverController.update(request: Request)
+
+
+####### FARMER - START ########
+
+
+GET     /farmer                           controllers.FarmerController.list()
+GET     /farmer/:id                           controllers.FarmerController.get(id:Long)
+POST    /farmer                  controllers.FarmerController.create(request: Request)
+PUT    /farmer              controllers.FarmerController.update(request: Request)
+
+####### FARMER - End   ########
+
+####### LAND - START ########
+
+
+GET     /land/:farmerId                           controllers.LandController.list(farmerId:Long)
+GET     /land/:id                           controllers.LandController.get(id:Long)
+POST    /land                  controllers.LandController.create(request: Request)
+PUT    /land              controllers.LandController.update(request: Request)
+
+####### LAND - End   ########
+
+####### USER CROP - START ########
+
+
+GET     /userCrops/:farmerId                           controllers.UserCropController.list(farmerId:Long)
+GET     /userCrop/:id                           controllers.UserCropController.get(id:Long)
+POST    /userCrop                  controllers.UserCropController.create(request: Request)
+PUT    /userCrop              controllers.UserCropController.update(request: Request)
+
+####### USER CROP - End   ########
+
+####### TRANSACTION - START ########
+
+
+GET     /transactions/:farmerId                           controllers.TransactionController.list(farmerId:Long)
+GET     /transaction/:id                           controllers.TransactionController.get(id:Long)
+POST    /transaction                  controllers.TransactionController.create(request: Request)
+PUT    /transaction              controllers.TransactionController.update(request: Request)
+
+####### TRANSACTION - End   ########
+
+
+####### CROP - START ########
+
+
+GET     /crop                           controllers.CropController.list()
+GET     /crop/:id                           controllers.CropController.get(id:Long)
+POST    /crop                  controllers.CropController.create(request: Request)
+PUT    /crop              controllers.CropController.update(request: Request)
+
+####### CROP - End   ########
+
+####### TRANSACTION REASON - START ########
+
+
+GET     /transactionReason                           controllers.TransactionReasonController.list()
+GET     /transactionReason/:id                           controllers.TransactionReasonController.get(id:Long)
+POST    /transactionReason                  controllers.TransactionReasonController.create(request: Request)
+PUT    /transactionReason              controllers.TransactionReasonController.update(request: Request)
+
+####### TRANSACTION REASON - End   ########
+
+####### SOIL - START ########
+
+
+GET     /soil                           controllers.SoilController.list()
+GET     /soil/:id                           controllers.SoilController.get(id:Long)
+POST    /soil                  controllers.SoilController.create(request: Request)
+PUT    /soil              controllers.SoilController.update(request: Request)
+
+####### SOIL - End   ########
+
+
+
+# Computers list (look at the default values for pagination parameters)
+GET     /computers                  controllers.HomeController.list(request: Request, p:Int ?= 0, s ?= "name", o ?= "asc", f ?= "")
+
+# Add computer
+GET     /computers/new              controllers.HomeController.create(request: Request)
+POST    /computers                  controllers.HomeController.save(request: Request)
+
+# Edit existing computer
+GET     /computers/:id              controllers.HomeController.edit(request: Request, id:Long)
+POST    /computers/:id              controllers.HomeController.update(request: Request, id:Long)
+
+# Delete a computer
+POST    /computers/:id/delete       controllers.HomeController.delete(id:Long)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
